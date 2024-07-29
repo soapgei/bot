@@ -14,14 +14,14 @@ import random
 from aiogram import Bot, Dispatcher, types, F
 
 def mk_ch():
-    f = open('/home/uliana/Downloads/_D0_B6_D0_B8_D0_B2_D0_BE_D1_82_D0_BD_D1_8B_D0_B5.txt', 'r')
+    f = open('_D0_B6_D0_B8_D0_B2_D0_BE_D1_82_D0_BD_D1_8B_D0_B5.txt', 'r')
     ls = list([i.strip() for i in f])
     if len(ls)!=0:
         choice=random.choice(ls)
         ls.remove(choice)
-        f = open('/home/uliana/Downloads/_D0_B6_D0_B8_D0_B2_D0_BE_D1_82_D0_BD_D1_8B_D0_B5.txt', 'w')
+        f = open('_D0_B6_D0_B8_D0_B2_D0_BE_D1_82_D0_BD_D1_8B_D0_B5.txt', 'w')
         f.write('')
-        f=open('/home/uliana/Downloads/_D0_B6_D0_B8_D0_B2_D0_BE_D1_82_D0_BD_D1_8B_D0_B5.txt','a')
+        f=open('_D0_B6_D0_B8_D0_B2_D0_BE_D1_82_D0_BD_D1_8B_D0_B5.txt','a')
         for i in ls:
             f.write('\n'+i)
         f.close()
